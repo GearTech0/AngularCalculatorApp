@@ -1,0 +1,7 @@
+<h1 id="solution" *ngIf="solution!==undefined">{{solution}}</h1>
+<form id="calc-form" [formGroup]="calcForm" (ngSubmit)="onSubmit()" novalidate>
+	<div class="form-group">
+		<input id="expression" type="number" class="form-control" formControlName="expression"/>
+	</div>
+	<button type="submit" [disabled]="!calcForm.valid" class="btn btn-success">calculate</button>
+</form>

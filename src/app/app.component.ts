@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EvencalculatorComponent } from './evencalculator/evencalculator.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Calculator App With a Working Calculator';
+  tagline = 'May cause uncontrollable bowels.';
+  solution: number;
 }
